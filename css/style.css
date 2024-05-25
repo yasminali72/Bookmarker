@@ -1,0 +1,146 @@
+:root{
+    --bgColor:#F7ECDE;
+    --defualtColor:#212529;
+    --defualtFont:"PT Sans Caption", sans-serif;
+    --mainColor:#FEC260;
+    --color1:#bb4120;
+    --color2:#F15F5D;
+    --color3:#FEBE2E;
+    --color4:#4DB748;
+
+}
+
+body{
+    background-color: var(--bgColor);
+}
+::selection{
+    background-color: var(--mainColor);
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background-color: var(--mainColor);
+    left: 0;
+    bottom: 10px;
+    z-index: -1;
+    transition: all 0.5s;
+
+
+}
+
+h1:hover::after{
+    height: 50%;
+}
+
+.content{
+    border:  1.6px dotted black;
+    border-left: 0;
+    border-right: 0;
+}
+h2{
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    background-image: linear-gradient(to right, rgb(60, 165, 92), rgb(181, 172, 73));
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+border-color:#d99c39 ;
+    box-shadow: 0 0 0 0.25rem #fec26055;;
+}
+
+.submit{
+    background-color: #D1512D;
+    border:1px solid #D1512D;
+    padding: 6px 48px;
+    font-family: var(--defualtFont);
+}
+.submit:hover{
+    background-color:var(--color1);
+    border-color:#a03315 ;
+}
+label{
+    font-family:var(--defualtFont) ;
+    font-weight: 600;
+    color: var(--defualtColor);
+
+}
+.table{
+    font-family: var(--defualtFont);  
+    --bs-emphasis-color: var(--defualtColor);
+}
+input{
+    font-family: var(--defualtFont);
+}
+
+.btn-visit{
+    padding: 6px 12px;
+    background-color:#9eb23b ;
+    border: 1px solid #9eb23b ;
+    
+}
+ a{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--defualtFont);
+}
+.btn-visit:hover{
+    background-color:#8a9e23;
+    border-color: #6e8018;
+}
+
+
+.btn-delete{
+    padding: 6px 12px;
+    background-color: #EB1D36;
+    border: 1px solid #EB1D36 ;
+}
+.btn-delete:hover{
+    background-color:#d30820;
+    border-color:#ba081d;
+}
+
+.ligth-container{
+    background-color: rgba(0, 0, 0, 0.46)
+}
+.box{
+    width: 500px;
+}
+.box h5{
+
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+}
+.box h6{
+    font-family: var(--defualtFont);
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.box .icons{
+    font-family: var(--defualtFont);
+}
+.box h6 i{
+    color: var(--color1);
+}
+.circle1{
+    color: var(--color2);
+}
+.circle2{
+    color: var(--color3);
+}
+.circle3{
+    color: var(--color4);
+}
+
+
+
