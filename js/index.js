@@ -28,10 +28,24 @@ else{
 }
 
 
+
+function validateName(siteName) {
+        var nameRegex = /^[\w]{3,}(\S| [\w]{1,}){0,}$/;
+        return nameRegex.test(siteName.value);
+    }
+    
+    function validateURL(siteURL) {
+        var urlRegex = /^(http|https):\/\/[\w]{1,}\.[\w]{2,}[\/]?\w{0,}/i;
+        return urlRegex.test(siteURL.value);
+    }
+    
+
+
+
 function addrow() {
 
 
-    if(siteName.value==='' || siteURL.value===''){
+    if(siteName.value==='' || siteURL.value==='' || !validateName(siteName) || !validateURL(siteURL)){
 
 ligthContainer.classList.replace('d-none','d-flex');
 ligthContainer.addEventListener('click',close);
@@ -47,7 +61,7 @@ boxContainer.addEventListener('click',function(e){
 
     } 
 
-   else{
+ else if(validateName(siteName)&&validateURL(siteURL)){
     row = {
         name:siteName.value,
         url:siteURL.value
