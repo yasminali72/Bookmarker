@@ -77,6 +77,42 @@ boxContainer.addEventListener('click',function(e){
 
    }
 
+
+   
+  // other solution
+
+    
+    //   if(validateName(siteName)&&validateURL(siteURL)){
+    //     row = {
+    //         name:siteName.value,
+    //         url:siteURL.value
+    
+    //     }
+    
+    
+    //     rowContainer.push(row);
+    //     localStorage.setItem('table',JSON.stringify(rowContainer));
+    
+    //     display(rowContainer);
+    //     clearData();
+    
+    //    }
+    //    else{
+
+    //     ligthContainer.classList.replace('d-none','d-flex');
+    //     ligthContainer.addEventListener('click',close);
+        
+        
+    //     closeBtn.addEventListener('click',close);
+        
+    //     boxContainer.addEventListener('click',function(e){
+    //        e.stopPropagation()
+        
+    //     })
+        
+        
+    //         } 
+
 }
 
  
